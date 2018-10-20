@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Light-weight SSE middleware for Koa",
   "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "tsc -p .",
+    "check": "npm run lint && npm test",
     "lint": "tslint -p .",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run check",
     "test": "mocha -r ts-node/register 'test/**/*.ts'"
   },
   "author": "Daniel Leong",
