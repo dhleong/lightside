@@ -2,7 +2,7 @@
   "name": "lightside",
   "version": "1.0.0",
   "description": "Light-weight SSE middleware for Koa",
-  "main": "src/index.ts",
+  "main": "dist/src/index.js",
   "scripts": {
     "build": "tsc -p .",
     "lint": "tslint -p .",

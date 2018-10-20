@@ -1,7 +1,7 @@
 import * as koa from "koa";
 
 import { ServerSideEvents } from "./sse";
-export { IEvent } from "./sse";
+export { IEvent, ServerSideEvents } from "./sse";
 
 // add our contribution to the interface
 declare module "koa" {
